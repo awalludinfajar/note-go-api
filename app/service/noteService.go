@@ -55,6 +55,7 @@ func CreateNote(title, content string) (model.Note, error) {
 		ID:      int(uuid.Must(uuid.NewRandom())[0]),
 		Title:   title,
 		Content: content,
+		// UserId: ,
 	}
 
 	notes = append(notes, newNote)
